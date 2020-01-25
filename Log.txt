@@ -1,0 +1,15 @@
+Hello DarkNRG Members, Please enter the log here
+--------------------------------------------------
+Format :-
+Date ; Name ; Title
+Description
+----------------------------------------------------
+Example :-
+06/09/1969 ; CrimsonRuby11 ; MainScene
+Added a new mainscene
+----------------------------------------------------
+
+////////////////////////////////////////////////////////////////
+
+25/01/2020 ; CrimsonRuby11 ; Initial Commit
+Created Godot Project, and added a mainscene
