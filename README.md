@@ -9,8 +9,8 @@
 **Yet to be decided**
 
 # Progress
-######    - Assets
-######        -Sprites
-######            - Walls
-######            - Floor
-######            - Door
+    - Assets
+        -Sprites
+            - Walls
+            - Floor
+            - Door
