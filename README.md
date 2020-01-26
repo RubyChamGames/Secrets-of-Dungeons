@@ -14,3 +14,6 @@
             - Walls
             - Floor
             - Door
+            - Player
+            - Enemy:Reaper
+            - Enemy:BlueFlame
