@@ -13,3 +13,9 @@ Added a new mainscene
 
 25/01/2020 ; CrimsonRuby11 ; Initial Commit
 Created Godot Project, and added a mainscene
+
+25/01/2020 ; Swamsthenerd ; Player and doors Sprites
+-nil-
+
+26/01/2020 ; CrimsonRuby11 ; Animations and Script
+Completed player Animations, and Movement Scripting
