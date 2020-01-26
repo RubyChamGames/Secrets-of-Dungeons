@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Sprites/Walls/Wall_Down.png" type="Texture" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Scenes/Reaper.gd" type="Script" id=21]
+[ext_resource path="res://Scenes/BlueFlame.tscn" type="PackedScene" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -400,3 +401,6 @@ zoom = Vector2( 0.5, 0.5 )
 [node name="Reaper" parent="." instance=ExtResource( 20 )]
 position = Vector2( 223.938, 92.1411 )
 script = ExtResource( 21 )
+
+[node name="BlueFlame" parent="." instance=ExtResource( 22 )]
+position = Vector2( 116.474, 105.885 )
