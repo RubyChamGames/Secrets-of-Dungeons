@@ -17,6 +17,7 @@ func _ready():
 # Update Function
 func _physics_process(delta):
 	disvector = Global.playerpos - position
+	dis = Global.distance(Global.playerpos, position)
 	dis = disvector.length()
 	
 	move()
