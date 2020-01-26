@@ -15,6 +15,8 @@ func _ready():
 
 # Update Function
 func _physics_process(delta):
+	Global.playerpos = position
+	
 	move(delta)
 	animate()
 
