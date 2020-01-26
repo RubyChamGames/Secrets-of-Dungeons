@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 # STARTING PLAYER SCRIPT
 
+
 # Constants
 const SPEED = 100
 
