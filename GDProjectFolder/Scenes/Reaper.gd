@@ -19,17 +19,23 @@ func _physics_process(delta):
 
 func move():
 	distance += 1
-	if distance == 50:
+	if distance == 100:
 		distance = 0
 		velocity.x = -velocity.x
 	velocity = move_and_slide(velocity)
 
 func animate():
-	if velocity.x > 0:
+	if dis < 50 and disvector.x > 0:
+		$AnimatedSprite.play("Attack")
+		$AnimatedSprite.flip_h = false
+	elif dis < 50 and disvector.x < 0:
+		$AnimatedSprite.play("Attack")
+		$AnimatedSprite.flip_h = true
+	elif velocity.x > 0:
 		$AnimatedSprite.play("Move")
 		$AnimatedSprite.flip_h = false
 	elif velocity.x < 0:
 		$AnimatedSprite.play("Move")
 		$AnimatedSprite.flip_h = true
-	if dis < 25:
-		$AnimatedSprite.play("Attack")
+	
+		
