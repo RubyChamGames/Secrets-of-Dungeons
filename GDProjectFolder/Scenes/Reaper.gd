@@ -3,7 +3,7 @@ extends KinematicBody2D
 var speed = 50
 var velocity = Vector2()
 var distance = 0
-
+var dis = (Global.playerpos - position)
 
 func _ready():
 	velocity.x = speed
@@ -26,3 +26,5 @@ func animate():
 	elif velocity.x < 0:
 		$AnimatedSprite.play("Move")
 		$AnimatedSprite.flip_h = true
+	if dis.x*dis.x + dis.y*dis.y < 25:
+		$AnimatedSprite.play("Attack")
