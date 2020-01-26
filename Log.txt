@@ -19,3 +19,15 @@ Created Godot Project, and added a mainscene
 
 26/01/2020 ; CrimsonRuby11 ; Animations and Script
 Completed player Animations, and Movement Scripting
+
+26/01/2020 ; Swamsthenerd ; Reaper Sprites
+-nil-
+
+26/01/2020 ; CrimsonRuby11 ; Torch, BlueFlame sprites
+-nil-
+
+26/01/2020 ; Swamsthenerd ; Animations and Script
+Created (enemy:reaper)'s and (enemy:BlueFlame) Animations and Movement Scripting
+
+26/01/2020 ; CrimsonRuby11 ; Animations and Script
+BlueFlameBall's spawning mechanisms and animations have been created
