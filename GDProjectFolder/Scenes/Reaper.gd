@@ -3,12 +3,17 @@ extends KinematicBody2D
 var speed = 50
 var velocity = Vector2()
 var distance = 0
-var dis = (Global.playerpos - position)
+var disvector
+var dis
 
 func _ready():
 	velocity.x = speed
+	disvector = Vector2(0, 0)
 
 func _physics_process(delta):
+	disvector = Global.playerpos - position
+	dis = disvector.length()
+	
 	move()
 	animate()
 
@@ -26,5 +31,5 @@ func animate():
 	elif velocity.x < 0:
 		$AnimatedSprite.play("Move")
 		$AnimatedSprite.flip_h = true
-	if dis.x*dis.x + dis.y*dis.y < 25:
+	if dis < 25:
 		$AnimatedSprite.play("Attack")

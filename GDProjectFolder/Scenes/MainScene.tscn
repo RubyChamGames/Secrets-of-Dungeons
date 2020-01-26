@@ -394,7 +394,7 @@ tile_data = PoolIntArray( 65536, 4, 0, 65537, 0, 0, 65538, 0, 0, 65539, 16, 0, 6
 "Player",
 ] instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 183, 140 )
+position = Vector2( 183, 152 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true

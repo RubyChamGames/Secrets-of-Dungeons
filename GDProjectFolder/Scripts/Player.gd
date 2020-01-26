@@ -17,10 +17,10 @@ func _ready():
 func _physics_process(delta):
 	Global.playerpos = position
 	
-	move(delta)
+	move()
 	animate()
 
-func move(delta):
+func move():
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = SPEED
 		playerDir = Vector2.RIGHT
