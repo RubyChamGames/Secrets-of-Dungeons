@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-# STARTING PLAYER SCRIPT
+# PLAYER SCRIPT
 
 # Constants
 const SPEED = 100
@@ -20,6 +20,7 @@ func _physics_process(delta):
 	move()
 	animate()
 
+# movement
 func move():
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = SPEED
@@ -43,6 +44,7 @@ func move():
 	
 	velocity = move_and_slide(velocity)
 
+# animation
 func animate():
 	if velocity.x > 0:
 		$AnimatedSprite.play("Right")
