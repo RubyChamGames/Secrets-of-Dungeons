@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlayerRight1.png-d399c76b66295c224224844b2484ecfd.stex"
+path="res://.import/Sword.png-f82192021fa31daebc2e602aa463b57e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Player/Player_None/PlayerRight1.png"
-dest_files=[ "res://.import/PlayerRight1.png-d399c76b66295c224224844b2484ecfd.stex" ]
+source_file="res://Assets/Sprites/Weapons/Sword.png"
+dest_files=[ "res://.import/Sword.png-f82192021fa31daebc2e602aa463b57e.stex" ]
 
 [params]
 

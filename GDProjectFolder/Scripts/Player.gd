@@ -46,19 +46,35 @@ func move():
 
 # animation
 func animate():
-	if velocity.x > 0:
-		$Player.play("Right")
-		$Player.flip_h = false
-	elif velocity.x < 0:
-		$Player.play("Right")
-		$Player.flip_h = true
-	elif playerDir == Vector2.UP:
-		$Player.play("Up")
-	elif playerDir == Vector2.DOWN:
-		$Player.play("Down")
+	if Global.playerProp == 1:
+		if velocity.x > 0:
+			$Player.play("Right_Knife")
+			$Player.flip_h = false
+		elif velocity.x < 0:
+			$Player.play("Right_Knife")
+			$Player.flip_h = true
+		elif playerDir == Vector2.UP:
+			$Player.play("Up_Knife")
+		elif playerDir == Vector2.DOWN:
+			$Player.play("Down_Knife")
+		elif playerDir == Vector2.ZERO:
+			$Player.play("Idle_Knife")
+	elif Global.playerProp == 0:
+		if velocity.x > 0:
+			$Player.play("Right")
+			$Player.flip_h = false
+		elif velocity.x < 0:
+			$Player.play("Right")
+			$Player.flip_h = true
+		elif playerDir == Vector2.UP:
+			$Player.play("Up")
+		elif playerDir == Vector2.DOWN:
+			$Player.play("Down")
+		
+		elif playerDir == Vector2.ZERO:
+			$Player.play("Idle")
+
 	
-	elif playerDir == Vector2.ZERO:
-		$Player.play("Idle")
 	
 	
 

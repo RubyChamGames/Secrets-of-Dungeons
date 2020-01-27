@@ -422,6 +422,7 @@ position = Vector2( 786, 95 )
 [node name="Skelebones" type="Node2D" parent="Hostiles"]
 
 [node name="Text" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Label1" type="Label" parent="Text"]
 margin_left = 40.0
@@ -455,7 +456,6 @@ Hostile Enemies in the Dungeons"
 [node name="Player" parent="." groups=[
 "Player",
 ] instance=ExtResource( 23 )]
-editor/display_folded = true
 position = Vector2( 183, 152 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
