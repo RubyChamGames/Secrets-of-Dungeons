@@ -1,0 +1,44 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/Skelebones.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonStance.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk4.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk5.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/Skeleton.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonAttack.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Move",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 3.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 7.0
+height = 16.0
+
+[node name="Skelebones" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, 0 )
+shape = SubResource( 2 )
