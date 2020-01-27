@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SwordSide.png-d92eda181ecfdd3b59ab7f8dce0b69dd.stex"
+path="res://.import/SwordSide.png-ffc2382a74de887517f4382a13f7bbec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Weapons/SwordSide.png"
-dest_files=[ "res://.import/SwordSide.png-d92eda181ecfdd3b59ab7f8dce0b69dd.stex" ]
+source_file="res://Assets/Sprites/Props/Weapons/SwordSide.png"
+dest_files=[ "res://.import/SwordSide.png-ffc2382a74de887517f4382a13f7bbec.stex" ]
 
 [params]
 
