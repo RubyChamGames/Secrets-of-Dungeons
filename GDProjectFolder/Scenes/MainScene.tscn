@@ -452,7 +452,6 @@ text = "SignBoards gives you clues, to
 find the Way Out of the Dungeon"
 
 [node name="Environment" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Doors" type="Node2D" parent="Environment"]
 editor/display_folded = true
@@ -472,10 +471,10 @@ editor/display_folded = true
 position = Vector2( 529, 112 )
 
 [node name="Signboard" type="Node2D" parent="Environment"]
-editor/display_folded = true
+position = Vector2( -1.99023, 25.2097 )
 
 [node name="Signboard1" parent="Environment/Signboard" instance=ExtResource( 23 )]
-position = Vector2( 528, 369 )
+position = Vector2( 530.585, 312.137 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard1"]
 visible = true
@@ -504,6 +503,7 @@ script = SubResource( 24 )
 
 [node name="Hostiles" type="Node2D" parent="."]
 editor/display_folded = true
+position = Vector2( -14.595, 49.756 )
 
 [node name="Reaper" type="Node2D" parent="Hostiles"]
 editor/display_folded = true
