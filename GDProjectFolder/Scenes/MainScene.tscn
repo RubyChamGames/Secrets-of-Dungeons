@@ -404,6 +404,7 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Reaper" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Reaper1" parent="Reaper" instance=ExtResource( 21 )]
 position = Vector2( 529, 79 )

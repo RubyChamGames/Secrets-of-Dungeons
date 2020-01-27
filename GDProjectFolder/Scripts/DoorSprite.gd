@@ -1,13 +1,15 @@
-extends Sprite
+extends StaticBody2D
 
 var openText = preload("res://Assets/Sprites/Doors/Door_Open.png")
 var closeText = preload("res://Assets/Sprites/Doors/Door_Closed.png")
 
 func _ready():
-	set_texture(closeText)
+	set_process(true)
 
 func _physics_process(delta):
-	if Global.distance(Global.playerpos, position) < 50:
-		set_texture(openText)
+	if Global.distance(position, Global.playerpos) < 32:
+		$Sprite.set_texture(openText)
+		$CollisionShape2D.disabled = true
 	else:
-		set_texture(closeText)
+		$Sprite.set_texture(closeText)
+		$CollisionShape2D.disabled = false
