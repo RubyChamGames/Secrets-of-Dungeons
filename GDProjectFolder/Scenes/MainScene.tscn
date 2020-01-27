@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Sprites/Walls/Wall_Down.png" type="Texture" id=2]
@@ -19,9 +19,10 @@
 [ext_resource path="res://Assets/Sprites/Walls/Wall_Up.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Sprites/Walls/Wall_LeftBottom2.png" type="Texture" id=18]
 [ext_resource path="res://Scenes/Doors.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=20]
-[ext_resource path="res://Assets/Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=21]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Scenes/Knife.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Assets/Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=22]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=23]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -384,7 +385,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
 [sub_resource type="DynamicFont" id=23]
 size = 11
-font_data = ExtResource( 21 )
+font_data = ExtResource( 22 )
 
 [node name="MainScene" type="Node2D"]
 
@@ -401,14 +402,19 @@ editor/display_folded = true
 position = Vector2( 368, 144 )
 rotation = 1.5708
 
+[node name="Knife" parent="Environment" instance=ExtResource( 20 )]
+position = Vector2( 529, 112 )
+
 [node name="Hostiles" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Reaper" type="Node2D" parent="Hostiles"]
+editor/display_folded = true
 
-[node name="Reaper1" parent="Hostiles/Reaper" instance=ExtResource( 20 )]
+[node name="Reaper1" parent="Hostiles/Reaper" instance=ExtResource( 21 )]
 position = Vector2( 786, 150 )
 
-[node name="Reaper2" parent="Hostiles/Reaper" instance=ExtResource( 20 )]
+[node name="Reaper2" parent="Hostiles/Reaper" instance=ExtResource( 21 )]
 position = Vector2( 786, 95 )
 
 [node name="BlueFlame" type="Node2D" parent="Hostiles"]
@@ -417,7 +423,7 @@ position = Vector2( 786, 95 )
 
 [node name="Text" type="Node2D" parent="."]
 
-[node name="Label" type="Label" parent="Text"]
+[node name="Label1" type="Label" parent="Text"]
 margin_left = 40.0
 margin_top = 81.0
 margin_right = 377.0
@@ -430,12 +436,28 @@ Arrow Keys.
 
 Some Doors open by itself"
 
-[node name="Player" parent="Text" groups=[
+[node name="Label2" type="Label" parent="Text"]
+margin_left = 423.0
+margin_top = 43.0
+margin_right = 632.0
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Press Spacebar while standing
+near the weapon to pick up
+
+
+
+
+Use the weapon to Attack
+Hostile Enemies in the Dungeons"
+
+[node name="Player" parent="." groups=[
 "Player",
-] instance=ExtResource( 22 )]
+] instance=ExtResource( 23 )]
 editor/display_folded = true
 position = Vector2( 183, 152 )
 
-[node name="Camera2D" type="Camera2D" parent="Text/Player"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
 zoom = Vector2( 0.5, 0.5 )

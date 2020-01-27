@@ -47,16 +47,18 @@ func move():
 # animation
 func animate():
 	if velocity.x > 0:
-		$AnimatedSprite.play("Right")
-		$AnimatedSprite.flip_h = false
+		$Player.play("Right")
+		$Player.flip_h = false
 	elif velocity.x < 0:
-		$AnimatedSprite.play("Right")
-		$AnimatedSprite.flip_h = true
+		$Player.play("Right")
+		$Player.flip_h = true
 	elif playerDir == Vector2.UP:
-		$AnimatedSprite.play("Up")
+		$Player.play("Up")
 	elif playerDir == Vector2.DOWN:
-		$AnimatedSprite.play("Down")
+		$Player.play("Down")
 	
 	elif playerDir == Vector2.ZERO:
-		$AnimatedSprite.play("Idle")
+		$Player.play("Idle")
+	
+	
 
