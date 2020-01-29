@@ -452,6 +452,7 @@ text = "SignBoards gives you clues, to
 find the Way Out of the Dungeon"
 
 [node name="Environment" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Doors" type="Node2D" parent="Environment"]
 editor/display_folded = true

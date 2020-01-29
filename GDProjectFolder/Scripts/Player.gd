@@ -74,7 +74,3 @@ func animate():
 		elif playerDir == Vector2.ZERO:
 			$Player.play("Idle")
 
-	
-	
-	
-
