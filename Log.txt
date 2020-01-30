@@ -31,3 +31,21 @@ Created (enemy:reaper)'s and (enemy:BlueFlame) Animations and Movement Scripting
 
 26/01/2020 ; CrimsonRuby11 ; Animations and Script
 BlueFlameBall's spawning mechanisms and animations have been created
+
+27/01/2020 ; Swamsthenerd ; Skeleton, Knife sprites
+-nil-
+
+27/01/2020 ; CrimsonRuby11 ; Scripting for Doors, Skeleton
+-nil-
+
+28/01/2020 ; CrimsonRuby11 ; Sign board scripting and sprite
+-nil-
+
+30/01/2020 ; Swamsthenerd ; 
+--> Fairy Sprite and Scripting
+--> Bug fixes in the map
+
+30/01/2020 ; CrimsonRuby11 ;
+--> Cobweb Sprite
+--> Skeleton Spawner Sprite and Scripting
+--> Map Updates
