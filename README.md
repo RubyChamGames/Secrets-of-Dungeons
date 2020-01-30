@@ -36,3 +36,6 @@
 # Overall Plan
 ![Plan](https://media.discordapp.net/attachments/670599989529018396/671730904573411336/unknown.png?width=564&height=664)
 
+# Sprites and Other Stuff
+![Sprites](https://cdn.discordapp.com/attachments/670599989529018396/672427048379219980/unknown.png)
+
