@@ -37,12 +37,9 @@
 ![Plan](https://media.discordapp.net/attachments/670599989529018396/671730904573411336/unknown.png?width=564&height=664)
 
 # Sprites and Other Stuff
-30 January 2020
-18:16
-
 1.) Enemy:
-	[] Reaper
-	[] BlueFlame
+	- [] Reaper
+	- [] BlueFlame
 	[] Skeleton and Skeleton spawner
 	[] Dragon (Boss)
 	[] Cockroach
