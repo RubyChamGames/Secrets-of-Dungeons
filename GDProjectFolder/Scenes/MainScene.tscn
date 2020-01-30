@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
@@ -25,8 +25,9 @@
 [ext_resource path="res://Scenes/Doors.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Scenes/Knife.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Scenes/Signboard.tscn" type="PackedScene" id=25]
-[ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=26]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Scenes/SkeletonSpawner.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=28]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -558,6 +559,12 @@ dialog_text = "Reapers dont stop, and the are great with
 their Scythes. Be Careful though..."
 script = SubResource( 27 )
 
+[node name="Spawners" type="Node2D" parent="Environment"]
+editor/display_folded = true
+
+[node name="SkeletonSpawner" parent="Environment/Spawners" instance=ExtResource( 26 )]
+position = Vector2( 480, -64 )
+
 [node name="Hostiles" type="Node2D" parent="."]
 editor/display_folded = true
 position = Vector2( -14.595, 49.756 )
@@ -565,10 +572,10 @@ position = Vector2( -14.595, 49.756 )
 [node name="Reaper" type="Node2D" parent="Hostiles"]
 editor/display_folded = true
 
-[node name="Reaper1" parent="Hostiles/Reaper" instance=ExtResource( 26 )]
+[node name="Reaper1" parent="Hostiles/Reaper" instance=ExtResource( 27 )]
 position = Vector2( 777.595, 119.244 )
 
-[node name="Reaper2" parent="Hostiles/Reaper" instance=ExtResource( 26 )]
+[node name="Reaper2" parent="Hostiles/Reaper" instance=ExtResource( 27 )]
 position = Vector2( 778.595, 47.244 )
 
 [node name="BlueFlame" type="Node2D" parent="Hostiles"]
@@ -577,7 +584,7 @@ position = Vector2( 778.595, 47.244 )
 
 [node name="Player" parent="." groups=[
 "Player",
-] instance=ExtResource( 27 )]
+] instance=ExtResource( 28 )]
 editor/display_folded = true
 position = Vector2( 178, 146 )
 
