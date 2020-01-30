@@ -38,13 +38,13 @@
 
 # Sprites and Other Stuff
 1.) Enemy:
-	- Reaper
-	- BlueFlame
-	- Skeleton and Skeleton spawner
-	- Dragon (Boss)
-	- Cockroach
-	- Sting Bee
-	- Devil
+	*- Reaper
+	*- BlueFlame
+	*- Skeleton and Skeleton spawner
+	*- Dragon (Boss)
+	*- Cockroach
+	*- Sting Bee
+	*- Devil
 	
 2.) Environment:
 	- Water
