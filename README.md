@@ -37,31 +37,6 @@
 ![Plan](https://media.discordapp.net/attachments/670599989529018396/671730904573411336/unknown.png?width=564&height=664)
 
 # Sprites and Other Stuff
-1.) Enemy:
-	*- Reaper
-	*- BlueFlame
-	*- Skeleton and Skeleton spawner
-	*- Dragon (Boss)
-	*- Cockroach
-	*- Sting Bee
-	*- Devil
-	
-2.) Environment:
-	- Water
-	- Lava
-	- Moss
-	- Cobwebs
-	- Quicksand
-
-3.) Biomes
-	- Graveyard Biome (Reaper, Skeleton, BlueFlame)
-	- Bug Infested Biome (Bugs)
-	- The Unknown Lands (Fantasy / Fictional Creatures)
-
-4.) NPCs:
-	- Old Thatha
-	- Lost Traveller
-	- Random Guy (Can be a bad / good guy)
-   - Fairy
+![Sprites](https://cdn.discordapp.com/attachments/670599989529018396/672427048379219980/unknown.png)
 
 
