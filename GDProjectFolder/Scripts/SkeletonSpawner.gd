@@ -3,8 +3,8 @@ extends StaticBody2D
 var skele = preload("res://Scenes/Skelebones.tscn")
 
 func _physics_process(delta):
-	if $Timer.is_stopped():
-		if Global.distance(Global.playerpos, position) < 50:
+	if Global.distance(Global.playerpos, position) < 50:
+		if $Timer.is_stopped():
 			$Timer.start()
 
 func _on_Timer_timeout():
