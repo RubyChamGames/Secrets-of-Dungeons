@@ -38,29 +38,29 @@
 
 # Sprites and Other Stuff
 ## 1.) Enemy:
-- [] Reaper
-- [] Blue Flame
-- [] Skeleton and Skeleton Spawner
-- [] Dragon (Boss)
-- [] Cockroach
-- [] Sting Bee
-- [] Devil
+- [x] Reaper
+- [x] Blue Flame
+- [x] Skeleton and Skeleton Spawner
+- [ ] Dragon (Boss)
+- [ ] Cockroach
+- [ ] Sting Bee
+- [ ] Devil
 
 ## 2.) NPCs:
-- [] Old Thatha
-- [] Fairy
-- [] Lost Explorer
-- [] Random Guy (Good/Bad) 
+- [ ] Old Thatha
+- [x] Fairy
+- [ ] Lost Explorer
+- [ ] Random Guy (Good/Bad) 
 
 ## 3.) Environment:
-- [] Water
-- [] Lava
-- [] Cobweb
-- [] Quick sand
-- [] Moss
+- [x] Water
+- [x] Lava
+- [x] Cobweb
+- [ ] Quick sand
+- [ ] Moss
 
 ## 4.) Biomes
-- [] Graveyard Biome (Reaper, Skeleton, BlueFlame)
-- [] Bug Infested Biome (Bugs)
-- [] The Unknown Lands (Fairy, Devil)
+- [ ] Graveyard Biome (Reaper, Skeleton, BlueFlame)
+- [ ] Bug Infested Biome (Bugs)
+- [ ] The Unknown Lands (Fairy, Devil)
 
