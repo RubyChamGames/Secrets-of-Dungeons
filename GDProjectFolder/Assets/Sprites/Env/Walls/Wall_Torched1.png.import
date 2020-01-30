@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wall_Torched1.png-ab152538b881e8287ca31df9f563fa3b.stex"
+path="res://.import/Wall_Torched1.png-346fb32c0673e6298cfa577b1d28fd69.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Walls/Wall_Torched1.png"
-dest_files=[ "res://.import/Wall_Torched1.png-ab152538b881e8287ca31df9f563fa3b.stex" ]
+source_file="res://Assets/Sprites/Env/Walls/Wall_Torched1.png"
+dest_files=[ "res://.import/Wall_Torched1.png-346fb32c0673e6298cfa577b1d28fd69.stex" ]
 
 [params]
 

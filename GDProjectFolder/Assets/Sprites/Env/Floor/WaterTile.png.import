@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WaterTile.png-bed685aef9954ca283af5309d2510fb4.stex"
+path="res://.import/WaterTile.png-cc19d2da77b5e021879cbfbe2453007b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Floor/WaterTile.png"
-dest_files=[ "res://.import/WaterTile.png-bed685aef9954ca283af5309d2510fb4.stex" ]
+source_file="res://Assets/Sprites/Env/Floor/WaterTile.png"
+dest_files=[ "res://.import/WaterTile.png-cc19d2da77b5e021879cbfbe2453007b.stex" ]
 
 [params]
 

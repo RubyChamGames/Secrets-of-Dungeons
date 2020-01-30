@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LavaTile2.png-936495a29284caa00ffa2557c1696b04.stex"
+path="res://.import/LavaTile2.png-89cc98b47a317e086ea31a2925af367a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Floor/LavaTile2.png"
-dest_files=[ "res://.import/LavaTile2.png-936495a29284caa00ffa2557c1696b04.stex" ]
+source_file="res://Assets/Sprites/Env/Floor/LavaTile2.png"
+dest_files=[ "res://.import/LavaTile2.png-89cc98b47a317e086ea31a2925af367a.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wall_Left.png-2a2529f41a0c16d5f5ba77ae07485dac.stex"
+path="res://.import/Wall_Left.png-2c0fc0d7200933aba3971fb3d1848ffd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Walls/Wall_Left.png"
-dest_files=[ "res://.import/Wall_Left.png-2a2529f41a0c16d5f5ba77ae07485dac.stex" ]
+source_file="res://Assets/Sprites/Env/Walls/Wall_Left.png"
+dest_files=[ "res://.import/Wall_Left.png-2c0fc0d7200933aba3971fb3d1848ffd.stex" ]
 
 [params]
 

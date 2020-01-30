@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SignBoard.png-1ca8797f59666ecbffc23d9cdde164e6.stex"
+path="res://.import/SignBoard.png-8278eaa86c4e777601f5be6ae62c8fce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Props/SignBoard.png"
-dest_files=[ "res://.import/SignBoard.png-1ca8797f59666ecbffc23d9cdde164e6.stex" ]
+source_file="res://Assets/Sprites/Env/Props/SignBoard.png"
+dest_files=[ "res://.import/SignBoard.png-8278eaa86c4e777601f5be6ae62c8fce.stex" ]
 
 [params]
 
