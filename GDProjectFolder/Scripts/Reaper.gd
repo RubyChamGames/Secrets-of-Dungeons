@@ -17,7 +17,6 @@ func _ready():
 # Update Function
 func _physics_process(delta):
 	disvector = Global.playerpos - position
-	dis = Global.distance(Global.playerpos, position)
 	dis = disvector.length()
 	
 	move()
@@ -33,14 +32,15 @@ func move():
 
 # Animation
 func animate():
-	if dis < 50 and disvector.x > 0:
-		$AnimatedSprite.play("Attack")
-		$AnimatedSprite.flip_h = false
-	else:
-		if dis < 50 and disvector.x < 0:
+	if dis < 75:
+		if disvector.x > 0:
+			$AnimatedSprite.play("Attack")
+			$AnimatedSprite.flip_h = false
+		elif disvector.x < 0:
 			$AnimatedSprite.play("Attack")
 			$AnimatedSprite.flip_h = true
-		elif velocity.x > 0:
+	else:
+		if velocity.x > 0:
 			$AnimatedSprite.play("Move")
 			$AnimatedSprite.flip_h = false
 		elif velocity.x < 0:
