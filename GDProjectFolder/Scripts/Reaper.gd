@@ -32,23 +32,22 @@ func move():
 
 # Animation
 func animate():
-	if dis < 75:
+	if dis < 60:
 		if disvector.x > 0:
 			$AnimatedSprite.play("Attack")
 			$AnimatedSprite.flip_h = false
 		elif disvector.x < 0:
 			$AnimatedSprite.play("Attack")
 			$AnimatedSprite.flip_h = true
-	else:
+	elif dis > 60:
 		if velocity.x > 0:
 			$AnimatedSprite.play("Move")
 			$AnimatedSprite.flip_h = false
 		elif velocity.x < 0:
 			$AnimatedSprite.play("Move")
 			$AnimatedSprite.flip_h = true
-		else:
+		elif velocity.x == 0:
 			$AnimatedSprite.play("Move")
-
 
 
 

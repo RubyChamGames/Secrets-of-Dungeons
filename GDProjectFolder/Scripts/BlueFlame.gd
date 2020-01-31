@@ -5,15 +5,24 @@ extends KinematicBody2D
 # Variables
 var flameball = preload("res://Scenes/BlueFlameBalls.tscn")
 var dir
+var lol = false
 
 # Ready Function
 func _ready():
-	$BallsTimer.start()
+	pass
 
 # Update Function
 func _physics_process(delta):
 	animate()
 	dir()
+	
+	if Global.distance(Global.playerpos, position) < 100:
+		if lol:
+			$BallsTimer.start()
+			lol = false
+	else:
+		lol = true
+		$BallsTimer.stop()
 
 # Animation
 func animate():
@@ -27,6 +36,7 @@ func _on_BallsTimer_timeout():
 	b.position = position
 	b.dir = b_dir
 	b.rotation = b_dir.angle()
+	lol = true
 
 # DirectionFacing
 func dir():
