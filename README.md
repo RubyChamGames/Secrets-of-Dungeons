@@ -41,7 +41,7 @@
 - [ ] Dragon (Boss)
 - [x] Cockroach
 - [ ] Sting Bee
-- [ ] Devil
+- [x] Devil
 
 ## 2.) NPCs:
 - [ ] Old Thatha
