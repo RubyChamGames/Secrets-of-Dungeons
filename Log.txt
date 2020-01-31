@@ -49,3 +49,6 @@ BlueFlameBall's spawning mechanisms and animations have been created
 --> Cobweb Sprite
 --> Skeleton Spawner Sprite and Scripting
 --> Map Updates
+
+30/01/2020 ; Swamsthenerd ; Cockroach Scripting and Animation
+-nil-
