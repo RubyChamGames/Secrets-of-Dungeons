@@ -65,4 +65,4 @@
 - [ ] The Unknown Lands (Fairy, Devil)
 
 ## 5.) Small Details
-- [ ] Heart
+- [x] Heart
