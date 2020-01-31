@@ -27,9 +27,9 @@
 [ext_resource path="res://Scenes/Signboard.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Scenes/SkeletonSpawner.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=27]
-[ext_resource path="res://Scenes/BlueFlame.tscn" type="PackedScene" id=28]
-[ext_resource path="res://Scenes/Cockroach.tscn" type="PackedScene" id=29]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Scenes/Cockroach.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Assets/Sprites/Small Details/Heart.png" type="Texture" id=30]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -451,14 +451,13 @@ font_data = ExtResource( 22 )
 [node name="MainScene" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-editor/display_folded = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-editor/display_folded = true
 motion_scale = Vector2( 0.5, 0.5 )
 motion_mirroring = Vector2( 1920, 1080 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 0, 2 )
 texture = ExtResource( 1 )
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
@@ -573,6 +572,7 @@ editor/display_folded = true
 [node name="Fairy" type="Node2D" parent="NPC"]
 
 [node name="Hostiles" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( -14.595, 49.756 )
 
 [node name="Reaper" type="Node2D" parent="Hostiles"]
@@ -586,23 +586,24 @@ position = Vector2( 778.595, 47.244 )
 
 [node name="BlueFlame" type="Node2D" parent="Hostiles"]
 
-[node name="BlueFlame" parent="Hostiles/BlueFlame" instance=ExtResource( 28 )]
-position = Vector2( 1084.59, 63.244 )
-
 [node name="Skelebones" type="Node2D" parent="Hostiles"]
 
 [node name="Roach" type="Node2D" parent="Hostiles"]
 editor/display_folded = true
 
-[node name="Cockroach" parent="Hostiles/Roach" instance=ExtResource( 29 )]
+[node name="Cockroach" parent="Hostiles/Roach" instance=ExtResource( 28 )]
 position = Vector2( 820.532, 275.185 )
 
 [node name="Player" parent="." groups=[
 "Player",
-] instance=ExtResource( 30 )]
-editor/display_folded = true
+] instance=ExtResource( 29 )]
 position = Vector2( 160.315, 140.559 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
-zoom = Vector2( 0.5, 0.5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1449, 60 )
+texture = ExtResource( 30 )
