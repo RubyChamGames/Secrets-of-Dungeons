@@ -33,9 +33,6 @@
 * Godot 3.1
 * GIMP 2.10
 
-# Overall Plan
-![Plan](https://media.discordapp.net/attachments/670599989529018396/671730904573411336/unknown.png?width=564&height=664)
-
 # Sprites and Other Stuff
 ## 1.) Enemy:
 - [x] Reaper
@@ -64,3 +61,5 @@
 - [ ] Bug Infested Biome (Bugs)
 - [ ] The Unknown Lands (Fairy, Devil)
 
+## 5.) Small Details
+- [x] Heart
