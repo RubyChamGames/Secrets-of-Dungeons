@@ -52,3 +52,12 @@ BlueFlameBall's spawning mechanisms and animations have been created
 
 30/01/2020 ; Swamsthenerd ; Cockroach Scripting and Animation
 -nil-
+
+31/01/2020 ; Swamsthenerd ; Devil Sprite
+--> Devil Sprite
+--> Heart for HUD
+
+31/01/2020 ; CrimsonRuby11 ;
+--> Map Update
+--> HUD Scripting
+--> Misc Scripting

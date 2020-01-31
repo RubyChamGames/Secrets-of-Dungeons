@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
@@ -29,7 +29,6 @@
 [ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Scenes/Cockroach.tscn" type="PackedScene" id=28]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=29]
-[ext_resource path="res://Assets/Sprites/Small Details/Heart.png" type="Texture" id=30]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -451,6 +450,7 @@ font_data = ExtResource( 22 )
 [node name="MainScene" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+editor/display_folded = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.5, 0.5 )
@@ -601,9 +601,4 @@ position = Vector2( 160.315, 140.559 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Sprite" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 1449, 60 )
-texture = ExtResource( 30 )
+zoom = Vector2( 0.5, 0.5 )
