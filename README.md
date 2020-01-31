@@ -42,7 +42,7 @@
 - [x] Blue Flame
 - [x] Skeleton and Skeleton Spawner
 - [ ] Dragon (Boss)
-- [ ] Cockroach
+- [x] Cockroach
 - [ ] Sting Bee
 - [ ] Devil
 
