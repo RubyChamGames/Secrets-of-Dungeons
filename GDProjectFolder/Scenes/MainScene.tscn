@@ -451,10 +451,8 @@ font_data = ExtResource( 22 )
 [node name="MainScene" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-editor/display_folded = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-editor/display_folded = true
 motion_scale = Vector2( 0.5, 0.5 )
 motion_mirroring = Vector2( 1920, 1080 )
 
@@ -568,39 +566,34 @@ editor/display_folded = true
 position = Vector2( 480, -64 )
 
 [node name="NPC" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Fairy" type="Node2D" parent="NPC"]
 
 [node name="Hostiles" type="Node2D" parent="."]
-position = Vector2( -14.595, 49.756 )
 
 [node name="Reaper" type="Node2D" parent="Hostiles"]
-editor/display_folded = true
 
 [node name="Reaper1" parent="Hostiles/Reaper" instance=ExtResource( 27 )]
-position = Vector2( 777.595, 119.244 )
+position = Vector2( 778.843, 187.547 )
 
 [node name="Reaper2" parent="Hostiles/Reaper" instance=ExtResource( 27 )]
-position = Vector2( 778.595, 47.244 )
+position = Vector2( 803.372, 115.39 )
 
 [node name="BlueFlame" type="Node2D" parent="Hostiles"]
 
 [node name="BlueFlame" parent="Hostiles/BlueFlame" instance=ExtResource( 28 )]
-position = Vector2( 1084.59, 63.244 )
+position = Vector2( 1050.37, 125.395 )
 
 [node name="Skelebones" type="Node2D" parent="Hostiles"]
 
 [node name="Roach" type="Node2D" parent="Hostiles"]
-editor/display_folded = true
 
 [node name="Cockroach" parent="Hostiles/Roach" instance=ExtResource( 29 )]
-position = Vector2( 820.532, 275.185 )
+position = Vector2( 620.661, 330.719 )
 
 [node name="Player" parent="." groups=[
 "Player",
 ] instance=ExtResource( 30 )]
-editor/display_folded = true
 position = Vector2( 160.315, 140.559 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
