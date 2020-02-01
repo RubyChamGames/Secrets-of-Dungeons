@@ -8,6 +8,7 @@ var velocity = Vector2()
 var distance = 0
 var disvector
 var dis
+var life = 2
 
 # Ready Function
 func _ready():
@@ -21,6 +22,7 @@ func _physics_process(delta):
 	
 	move()
 	animate()
+	attacked()
 
 # Movement
 func move():
@@ -49,5 +51,11 @@ func animate():
 		elif velocity.x == 0:
 			$AnimatedSprite.play("Move")
 
-
-
+func attacked():
+	if dis < 60:
+		if Input.is_action_just_pressed("ui_lmb"):
+			life -= 1
+			$EnemyAttackParticles.emitting = true
+	
+	if life <= 0:
+		queue_free()
