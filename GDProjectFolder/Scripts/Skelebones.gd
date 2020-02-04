@@ -4,6 +4,8 @@ const SPEED = 1200
 
 var dir
 var state
+var dis
+var life = 4
 
 func _ready():
 	state = 1
@@ -12,6 +14,7 @@ func _physics_process(delta):
 	stateFinder()
 	animate()
 	dir = (Global.playerpos - position).normalized()
+	dis = Global.distance(Global.playerpos, position)
 	
 	if state == 2 or state == 3:
 		move_and_slide(SPEED * dir * delta)
@@ -36,4 +39,12 @@ func stateFinder():
 			state = 2
 	else:
 		state = 1
+
+func attacked():
+	if dis < 60:
+		if Input.is_action_just_pressed("ui_lmb"):
+			life -= 1
+			$EnemyAttackParticles.emitting = true
+	if life <= 0:
+		queue_free()
 

@@ -7,8 +7,8 @@
 [ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk3.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk4.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk5.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/Skeleton.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonAttack.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonAttack.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/Skeleton.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -17,15 +17,15 @@ animations = [ {
 "name": "Move",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 8 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Attack",
 "speed": 3.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]

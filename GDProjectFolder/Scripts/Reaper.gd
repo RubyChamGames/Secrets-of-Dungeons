@@ -9,16 +9,21 @@ var distance = 0
 var disvector
 var dis
 var life = 2
+var particles
 
 # Ready Function
 func _ready():
 	velocity.x = speed
 	disvector = Vector2(0, 0)
+	particles = false
 
 # Update Function
 func _physics_process(delta):
 	disvector = Global.playerpos - position
 	dis = disvector.length()
+	
+	if particles:
+		$EnemyAttackParticles.emitting = true
 	
 	move()
 	animate()
@@ -56,6 +61,5 @@ func attacked():
 		if Input.is_action_just_pressed("ui_lmb"):
 			life -= 1
 			$EnemyAttackParticles.emitting = true
-	
 	if life <= 0:
 		queue_free()
