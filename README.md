@@ -44,7 +44,7 @@
 - [x] Devil
 
 ## 2.) NPCs:
-- [ ] Old Thatha
+- [x] Old Thatha
 - [x] Fairy
 - [ ] Lost Explorer
 - [ ] Random Guy (Good/Bad) 
