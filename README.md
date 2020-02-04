@@ -57,7 +57,7 @@
 - [ ] Moss
 
 ## 4.) Biomes
-- [ ] Graveyard Biome (Reaper, Skeleton, BlueFlame)
+- [x] Graveyard Biome (Reaper, Skeleton, BlueFlame)
 - [ ] Bug Infested Biome (Bugs)
 - [ ] The Unknown Lands (Fairy, Devil)
 
