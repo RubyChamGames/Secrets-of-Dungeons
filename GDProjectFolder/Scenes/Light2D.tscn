@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Sprites/Player/Light.png" type="Texture" id=1]
+
+[node name="Light2D" type="Light2D"]
+position = Vector2( -1, 2 )
+texture = ExtResource( 1 )
+color = Color( 1, 0.811765, 0.572549, 1 )
+mode = 3
