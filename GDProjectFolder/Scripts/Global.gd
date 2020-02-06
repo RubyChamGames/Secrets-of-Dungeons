@@ -7,7 +7,8 @@ var playerpos = Vector2()
 var playerProp = 0
 var playerState
 var playerHurt = false
-var playerLife = 3
+var GameOver = false
+var playerHealth
 
 signal EnemyAttacked
 
@@ -15,13 +16,12 @@ func _ready():
 	set_process(true)
 	
 	playerState = "Idle"
+	playerHealth = 10
 
 func _process(delta):
-	if playerHurt:
-		if playerLife <= 0:
-			pass
-		else:
-			playerLife -= 1
+	if playerHealth <= 0:
+		queue_free()
+	print(playerHealth)
 
 # To Find Distance between 2 points
 func distance(vect1, vect2):

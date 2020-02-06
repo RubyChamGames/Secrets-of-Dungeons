@@ -27,7 +27,7 @@ font_data = ExtResource( 4 )
 editor/display_folded = true
 
 [node name="1" type="Sprite" parent="BG"]
-position = Vector2( 774, 230 )
+position = Vector2( 693, 218 )
 texture = ExtResource( 1 )
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
@@ -79,8 +79,10 @@ text = "SignBoards gives you clues, to
 find the Way Out of the Dungeon"
 
 [node name="Environment" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Doors" type="Node2D" parent="Environment"]
+editor/display_folded = true
 
 [node name="Door1" parent="Environment/Doors" instance=ExtResource( 5 )]
 position = Vector2( 368, 144 )
@@ -91,6 +93,7 @@ position = Vector2( 912, 112 )
 rotation = 1.5708
 
 [node name="Knife" type="Node2D" parent="Environment"]
+editor/display_folded = true
 
 [node name="Knife" parent="Environment/Knife" instance=ExtResource( 6 )]
 position = Vector2( 529, 112 )
@@ -98,6 +101,7 @@ position = Vector2( 529, 112 )
 [node name="Signboard" type="Node2D" parent="Environment"]
 
 [node name="Signboard1" parent="Environment/Signboard" instance=ExtResource( 7 )]
+editor/display_folded = true
 position = Vector2( 528, 337 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard1"]
@@ -111,6 +115,7 @@ Ranged Weapon"
 script = SubResource( 2 )
 
 [node name="Signboard2" parent="Environment/Signboard" instance=ExtResource( 7 )]
+editor/display_folded = true
 position = Vector2( 753, 401 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard2"]
@@ -123,12 +128,30 @@ dialog_text = "Reapers dont stop, and the are great with
 their Scythes. Be Careful though..."
 script = SubResource( 2 )
 
+[node name="Signboard3" parent="Environment/Signboard" instance=ExtResource( 7 )]
+editor/display_folded = true
+position = Vector2( 784, 48 )
+
+[node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard3"]
+margin_left = -105.0
+margin_top = -449.0
+margin_right = 178.0
+margin_bottom = -357.0
+window_title = "Conjuring"
+dialog_text = "Places with a lot of Cobwebs
+Are known to Conjure Hostile Enemies, Rapidly
+Until You are away from the place,
+Hence, may contain Treasures..."
+script = SubResource( 2 )
+
 [node name="Spawners" type="Node2D" parent="Environment"]
+editor/display_folded = true
 
 [node name="SkeletonSpawner" parent="Environment/Spawners" instance=ExtResource( 8 )]
 position = Vector2( 480, -64 )
 
 [node name="Stairs" type="Node2D" parent="Environment"]
+editor/display_folded = true
 
 [node name="Upstairs" parent="Environment/Stairs" instance=ExtResource( 9 )]
 position = Vector2( 112, 143 )
@@ -137,10 +160,12 @@ position = Vector2( 112, 143 )
 position = Vector2( 1136, 112 )
 
 [node name="NPC" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Fairy" type="Node2D" parent="NPC"]
 
 [node name="Hostiles" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Reaper" type="Node2D" parent="Hostiles"]
 
@@ -162,6 +187,7 @@ position = Vector2( 766.383, 333.847 )
 [node name="Player" parent="." groups=[
 "Player",
 ] instance=ExtResource( 13 )]
+editor/display_folded = true
 position = Vector2( 160.315, 140.559 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]

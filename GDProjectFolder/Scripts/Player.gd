@@ -8,6 +8,7 @@ const SPEED = 100
 # Variables
 var velocity = Vector2()
 var playerDir = Vector2()
+var playerHealth
 
 # Ready Function
 func _ready():
@@ -16,9 +17,11 @@ func _ready():
 # Update Function
 func _physics_process(delta):
 	Global.playerpos = position
+	playerHealth = Global.playerHealth
 	
 	move()
 	animate()
+	hurt()
 
 # movement
 func move():
@@ -74,3 +77,11 @@ func animate():
 		elif playerDir == Vector2.ZERO:
 			$Player.play("Idle")
 
+func hurt():
+	if Global.playerHurt:
+		if $HurtTimer.is_stopped():
+			$HurtTimer.start()
+
+func _on_HurtTimer_timeout():
+	Global.playerHealth -= 1
+	$EnemyAttackParticles.emitting = true

@@ -23,7 +23,9 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 10.1715, 11.1364 )
 
-[node name="Reaper" type="KinematicBody2D"]
+[node name="Reaper" type="KinematicBody2D" groups=[
+"Reaper",
+]]
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]

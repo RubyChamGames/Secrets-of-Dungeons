@@ -28,6 +28,7 @@ func _physics_process(delta):
 	move()
 	animate()
 	attacked()
+	playerHurt()
 
 # Movement
 func move():
@@ -63,3 +64,11 @@ func attacked():
 			$EnemyAttackParticles.emitting = true
 	if life <= 0:
 		queue_free()
+
+func playerHurt():
+	if Global.distance(Global.playerpos, position) < 60:
+		Global.playerHurt = true
+	else:
+		Global.playerHurt = false
+
+
