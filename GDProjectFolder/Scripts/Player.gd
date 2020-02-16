@@ -21,7 +21,8 @@ func _physics_process(delta):
 	
 	move()
 	animate()
-	hurt()
+	if Global.playerHurt:
+		hurt()
 
 # movement
 func move():
@@ -83,13 +84,7 @@ func hurt():
 			$HurtTimer.start()
 
 func _on_HurtTimer_timeout():
-	var hurtNumber = 0
-	match Global.hurtFactor:
-		"Reaper":
-			hurtNumber = 1
-	$EnemyAttackParticles.emitting = true
-	Global.playerHealth -= hurtNumber
-
+	Global.isplayerHurt()
 
 
 

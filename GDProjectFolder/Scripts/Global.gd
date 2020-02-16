@@ -11,7 +11,8 @@ var GameOver = false
 var playerHealth
 var isPlayerAlive = true
 var playerWeapon = "null"
-var hurtFactor = "null"
+var gameFloor = 0
+var hurtCountList = []
 
 func _ready():
 	set_process(true)
@@ -28,3 +29,21 @@ func _process(delta):
 # To Find Distance between 2 points
 func distance(vect1, vect2):
 	return (vect1 - vect2).length()
+
+func HurtCounter():
+	var totalhurt = 0
+	for n in hurtCountList:
+		totalhurt += n
+	return totalhurt
+
+func isplayerHurt():
+	var hurtcount = Global.HurtCounter()
+	Global.playerHealth -= hurtcount
+	hurtCountList = []
+
+
+
+
+
+
+

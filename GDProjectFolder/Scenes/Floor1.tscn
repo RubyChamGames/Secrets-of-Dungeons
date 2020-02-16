@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/TileSet.tres" type="TileSet" id=3]
-[ext_resource path="res://Scenes/Downstairs.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Signboard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Light2D.tscn" type="PackedScene" id=7]
@@ -60,9 +59,6 @@ tile_data = PoolIntArray( -1048519, 4, 0, -1048518, 0, 0, -1048517, 0, 0, -10485
 
 [node name="Stairs" type="Node2D" parent="Environment"]
 
-[node name="Downstairs" parent="Environment/Stairs" instance=ExtResource( 4 )]
-position = Vector2( -48, 16 )
-
 [node name="Signboard" type="Node2D" parent="Environment"]
 
 [node name="Signboard" parent="Environment/Signboard" instance=ExtResource( 5 )]
@@ -92,3 +88,4 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Light2D" parent="Player/Camera2D" instance=ExtResource( 7 )]
+visible = false

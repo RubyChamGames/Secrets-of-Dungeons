@@ -62,17 +62,12 @@ func attacked():
 		if Input.is_action_just_pressed("ui_lmb"):
 			life -= 1
 			$EnemyAttackParticles.emitting = true
-			
 	if life <= 0:
 		Global.playerHurt = false
 		queue_free()
 
 func playerHurt():
-	if Global.distance(Global.playerpos, position) < 60:
-		Global.playerHurt = true
-		Global.hurtFactor = "Reaper"
-	else:
-		Global.playerHurt = false
-		Global.hurtFactor = "null"
+	if Global.distance(Global.playerpos, position) < 60 and !Global.hurtCountList.has(1):
+		Global.hurtCountList.append(1) 
 
 

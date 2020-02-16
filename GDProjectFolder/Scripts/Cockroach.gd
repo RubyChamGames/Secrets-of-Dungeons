@@ -11,3 +11,10 @@ func _physics_process(delta):
 	dir = (Global.playerpos - position).normalized()
 	look_at(Global.playerpos)
 	move_and_slide(speed * dir * delta)
+	
+	playerAttack()
+
+func playerAttack():
+	if Global.distance(Global.playerpos, position) < 40:
+		Global.playerHurt = true
+	
