@@ -9,8 +9,9 @@ var playerState
 var playerHurt = false
 var GameOver = false
 var playerHealth
-
-signal EnemyAttacked
+var isPlayerAlive = true
+var playerWeapon = "null"
+var hurtFactor = "null"
 
 func _ready():
 	set_process(true)
@@ -20,20 +21,10 @@ func _ready():
 
 func _process(delta):
 	if playerHealth <= 0:
-		queue_free()
+		get_tree().quit(010)
+	
 	print(playerHealth)
 
 # To Find Distance between 2 points
 func distance(vect1, vect2):
 	return (vect1 - vect2).length()
-
-# Player Attack
-func playerAttack(life, dis, Enemy, particles):
-	if dis < 60:
-		if Input.is_action_just_pressed("ui_lmb"):
-			life -= 1
-			particles = true
-	
-	if life <= 0:
-		Enemy.queue_free()
-	

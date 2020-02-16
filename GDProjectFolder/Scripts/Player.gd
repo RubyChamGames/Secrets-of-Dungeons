@@ -83,5 +83,13 @@ func hurt():
 			$HurtTimer.start()
 
 func _on_HurtTimer_timeout():
-	Global.playerHealth -= 1
+	var hurtNumber = 0
+	match Global.hurtFactor:
+		"Reaper":
+			hurtNumber = 1
 	$EnemyAttackParticles.emitting = true
+	Global.playerHealth -= hurtNumber
+
+
+
+

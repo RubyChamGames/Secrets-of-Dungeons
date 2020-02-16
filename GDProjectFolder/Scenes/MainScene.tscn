@@ -88,9 +88,11 @@ rotation = 1.5708
 position = Vector2( 912, 112 )
 rotation = 1.5708
 
-[node name="Knife" type="Node2D" parent="Environment"]
+[node name="Weapons" type="Node2D" parent="Environment"]
 
-[node name="Knife" parent="Environment/Knife" instance=ExtResource( 6 )]
+[node name="Knife" type="Node2D" parent="Environment/Weapons"]
+
+[node name="Knife" parent="Environment/Weapons/Knife" instance=ExtResource( 6 )]
 position = Vector2( 529, 112 )
 
 [node name="Signboard" type="Node2D" parent="Environment"]
@@ -157,11 +159,11 @@ position = Vector2( 1136, 112 )
 
 [node name="Reaper" type="Node2D" parent="Hostiles"]
 
-[node name="Reaper1" parent="Hostiles/Reaper" instance=ExtResource( 11 )]
-position = Vector2( 790.23, 175.198 )
-
 [node name="Reaper2" parent="Hostiles/Reaper" instance=ExtResource( 11 )]
 position = Vector2( 780.4, 99.5884 )
+
+[node name="Reaper3" parent="Hostiles/Reaper" instance=ExtResource( 11 )]
+position = Vector2( 801, 166 )
 
 [node name="BlueFlame" type="Node2D" parent="Hostiles"]
 
@@ -182,3 +184,4 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Light2D" parent="Player/Camera2D" instance=ExtResource( 14 )]
+visible = false
