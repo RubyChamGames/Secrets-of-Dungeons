@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Scenes/Fairy.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Fairy.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/NPC/Fairy1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/NPC/Fairy2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/EnemyAttackParticles.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -27,3 +28,15 @@ playing = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -1.75239, 0.500683 )
 shape = SubResource( 2 )
+disabled = true
+
+[node name="HealthTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="LifeTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="EnemyAttackParticles" parent="." instance=ExtResource( 4 )]
+[connection signal="timeout" from="HealthTimer" to="." method="_on_HealthTimer_timeout"]
+[connection signal="timeout" from="LifeTimer" to="." method="_on_LifeTimer_timeout"]
