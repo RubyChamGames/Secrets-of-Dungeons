@@ -5,7 +5,9 @@ extends KinematicBody2D
 # Variables
 var flameball = preload("res://Scenes/BlueFlameBalls.tscn")
 var dir
+var dis
 var lol = false
+var life = 3
 
 # Ready Function
 func _ready():
@@ -15,8 +17,9 @@ func _ready():
 func _physics_process(delta):
 	animate()
 	dir()
+	dis = Global.distance(Global.playerpos, position)
 	
-	if Global.distance(Global.playerpos, position) < 100:
+	if dis < 100:
 		if lol:
 			$BallsTimer.start()
 			lol = false
@@ -44,3 +47,12 @@ func dir():
 		scale.x = -1
 	else:
 		scale.x = 1
+
+func attacked():
+	if dis < 50:
+		if Global.playerWeapon == "Knife":
+			if Input.is_action_just_pressed("ui_lmb"):
+				life -= 1
+
+
+

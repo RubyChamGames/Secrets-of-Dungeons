@@ -16,6 +16,10 @@ func _physics_process(delta):
 func _on_BlueFlameBalls_body_entered(body):
 	if body.is_in_group("Player"):
 		queue_free()
+		
+		if !Global.hurtCountList.has(0.5):
+			Global.playerHurt = true
+			Global.hurtCountList.append(0.5)
 
 
 

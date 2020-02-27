@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/TileSet.tres" type="TileSet" id=3]
+[ext_resource path="res://Scenes/BlueFlame.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Signboard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Light2D.tscn" type="PackedScene" id=7]
@@ -77,11 +78,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Enemies" type="Node2D" parent="."]
-
 [node name="NPC" type="Node2D" parent="."]
 
-[node name="Player" parent="." instance=ExtResource( 6 )]
+[node name="Hostiles" type="Node2D" parent="."]
+
+[node name="Skeleton" type="Node2D" parent="Hostiles"]
+
+[node name="Reaper" type="Node2D" parent="Hostiles"]
+
+[node name="BlueFlame" type="Node2D" parent="Hostiles"]
+
+[node name="BlueFlame" parent="Hostiles/BlueFlame" instance=ExtResource( 4 )]
+position = Vector2( -23, 467 )
+
+[node name="Player" parent="." groups=[
+"Player",
+] instance=ExtResource( 6 )]
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true

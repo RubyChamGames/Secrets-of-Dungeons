@@ -59,9 +59,10 @@ func animate():
 
 func attacked():
 	if dis < 60:
-		if Input.is_action_just_pressed("ui_lmb"):
-			life -= 1
-			$EnemyAttackParticles.emitting = true
+		if Global.playerWeapon == "Knife":
+			if Input.is_action_just_pressed("ui_lmb"):
+				life -= 1
+				$EnemyAttackParticles.emitting = true
 	if life <= 0:
 		Global.playerHurt = false
 		queue_free()
