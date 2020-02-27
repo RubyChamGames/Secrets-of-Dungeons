@@ -12,7 +12,7 @@ var playerHealth
 
 # Ready Function
 func _ready():
-	pass
+	$Camera2D/Light2D.show()
 
 # Update Function
 func _physics_process(delta):

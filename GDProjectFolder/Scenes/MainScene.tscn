@@ -26,7 +26,7 @@ font_data = ExtResource( 4 )
 [node name="BG" type="Node2D" parent="."]
 
 [node name="1" type="Sprite" parent="BG"]
-position = Vector2( 693, 218 )
+position = Vector2( 700, 216 )
 texture = ExtResource( 1 )
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
@@ -108,6 +108,8 @@ position = Vector2( 529, 112 )
 position = Vector2( 528, 337 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard1"]
+visible = true
+modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -169.0
 margin_right = 130.0
 margin_bottom = 92.0
@@ -116,11 +118,15 @@ dialog_text = "Continue the Journey, There are a lot of
 Mysteries in these Dungeons. U may need a
 Ranged Weapon"
 script = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Signboard2" parent="Environment/Signboard" instance=ExtResource( 7 )]
 position = Vector2( 753, 401 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard2"]
+modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -138.0
 margin_top = 8.0
 margin_right = 145.0
@@ -134,6 +140,7 @@ script = SubResource( 2 )
 position = Vector2( 784, 48 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard3"]
+modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -105.0
 margin_top = -449.0
 margin_right = 178.0
@@ -149,6 +156,7 @@ script = SubResource( 2 )
 position = Vector2( 880, 145 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard4"]
+modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -159.0
 margin_top = -73.0
 margin_right = 176.0
@@ -203,4 +211,5 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Light2D" parent="Player/Camera2D" instance=ExtResource( 14 )]
+visible = false
 color = Color( 0.968627, 0.72549, 0.415686, 1 )
