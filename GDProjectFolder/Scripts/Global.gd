@@ -23,7 +23,7 @@ func _ready():
 
 func _process(delta):
 	if playerHealth <= 0:
-		get_tree().quit(010)
+		get_tree().quit()
 	
 	print(playerHealth)
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WalkDown.png-48ddc1b0d58e9120fcd241a96bbe16fc.stex"
+path="res://.import/WalkUp-2.png-ae46ef4634f05555ab8d4c9b0206d562.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/PlayerNew/Walk_Down/WalkDown.png"
-dest_files=[ "res://.import/WalkDown.png-48ddc1b0d58e9120fcd241a96bbe16fc.stex" ]
+source_file="res://Assets/Sprites/PlayerNew/Walk_Up/WalkUp-2.png"
+dest_files=[ "res://.import/WalkUp-2.png-ae46ef4634f05555ab8d4c9b0206d562.stex" ]
 
 [params]
 
