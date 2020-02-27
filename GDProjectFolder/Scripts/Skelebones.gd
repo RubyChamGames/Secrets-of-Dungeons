@@ -47,15 +47,16 @@ func stateFinder():
 
 func attacked():
 	if dis <= 32:
-		if Input.is_action_just_pressed("ui_lmb"):
-			life -= 1
-			$EnemyAttackParticles.emitting = true
+		if Global.playerWeapon == "Knife":
+			if Input.is_action_just_pressed("ui_lmb"):
+				life -= 1
+				$EnemyAttackParticles.emitting = true
 	if life <= 0:
 		Global.playerHurt = false
 		queue_free()
 
 func playerHurt():
-	if dis < 32 and !Global.hurtCountList.has(1):
+	if dis < 32 and !Global.hurtCountList.has(0.75):
 		Global.playerHurt = true
-		Global.hurtCountList.append(1)
+		Global.hurtCountList.append(0.75)
 
