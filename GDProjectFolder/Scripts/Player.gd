@@ -85,6 +85,7 @@ func hurt():
 
 func _on_HurtTimer_timeout():
 	Global.isplayerHurt()
+	$EnemyAttackParticles.emitting = true
 
 
 
