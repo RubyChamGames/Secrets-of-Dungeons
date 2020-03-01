@@ -108,7 +108,6 @@ position = Vector2( 529, 112 )
 position = Vector2( 528, 337 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard1"]
-visible = true
 modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -169.0
 margin_right = 130.0

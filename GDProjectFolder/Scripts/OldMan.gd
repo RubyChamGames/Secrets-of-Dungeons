@@ -2,29 +2,29 @@ extends StaticBody2D
 
 var dis
 var distance = 0
-var moving
 var popup
 var velocity = Vector2(20, 0)
 
 func _ready():
-	moving = true
+	pass
 
 func _physics_process(delta):
-	pass
+	dis = Global.distance(Global.playerpos, position)
+	
+	trigger()
+	animate()
 
 func trigger():
 	if dis < 50:
 		if Input.is_action_just_pressed("ui_accept"):
-			moving = false
+			_popup()
 			popup = true
 
 func animate():
-	if moving:
-		$AnimatedSprite.play("default")
-	else:
+	if popup:
 		$AnimatedSprite.play("Talk")
 
-func popup():
-	if popup:
-		
+func _popup():
+	get_node("Popup").popup()
+	get_node("Popup").set_global_position(position)
 

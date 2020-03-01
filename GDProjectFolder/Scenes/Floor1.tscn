@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Scenes/Fairy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Skelebones.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/OldMan.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Knife.tscn" type="PackedScene" id=12]
 
 [node name="Floor1" type="Node2D"]
 
@@ -63,6 +65,13 @@ tile_data = PoolIntArray( -1048519, 4, 0, -1048518, 0, 0, -1048517, 0, 0, -10485
 
 [node name="Stairs" type="Node2D" parent="Environment"]
 
+[node name="Weapons" type="Node2D" parent="Environment"]
+
+[node name="Knife" type="Node2D" parent="Environment/Weapons"]
+
+[node name="Knife" parent="Environment/Weapons/Knife" instance=ExtResource( 12 )]
+position = Vector2( 237, 109 )
+
 [node name="Signboard" type="Node2D" parent="Environment"]
 
 [node name="Signboard" parent="Environment/Signboard" instance=ExtResource( 5 )]
@@ -99,15 +108,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NPC" type="Node2D" parent="."]
-
-[node name="Fairy" type="Node2D" parent="NPC"]
-
-[node name="Fairy" parent="NPC/Fairy" instance=ExtResource( 8 )]
-position = Vector2( 640, 135 )
-
-[node name="OldMan" type="Node2D" parent="NPC"]
-
 [node name="Hostiles" type="Node2D" parent="."]
 
 [node name="Skeleton" type="Node2D" parent="Hostiles"]
@@ -142,6 +142,32 @@ position = Vector2( 63, 517 )
 
 [node name="BlueFlame3" parent="Hostiles/BlueFlame" instance=ExtResource( 4 )]
 position = Vector2( 412, 467 )
+
+[node name="NPC" type="Node2D" parent="."]
+
+[node name="Fairy" type="Node2D" parent="NPC"]
+
+[node name="Fairy" parent="NPC/Fairy" instance=ExtResource( 8 )]
+position = Vector2( 640, 135 )
+
+[node name="OldMan" type="Node2D" parent="NPC"]
+
+[node name="OldMan" parent="NPC/OldMan" instance=ExtResource( 11 )]
+position = Vector2( 977, -136 )
+
+[node name="Popup" type="AcceptDialog" parent="NPC/OldMan/OldMan"]
+visible = true
+modulate = Color( 1, 0.278431, 0.164706, 1 )
+margin_left = -104.0
+margin_top = -27.0
+margin_right = 126.0
+margin_bottom = 65.0
+window_title = "Thanks Child..."
+dialog_text = "My Child, this dungeon is vast, you will need this. Take this as a gift for saving my life."
+dialog_autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Player" parent="." groups=[
 "Player",

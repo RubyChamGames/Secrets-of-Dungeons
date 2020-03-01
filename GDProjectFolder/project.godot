@@ -28,8 +28,7 @@ IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
+window/size/width=800
 
 [editor_plugins]
 
