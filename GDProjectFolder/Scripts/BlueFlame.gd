@@ -17,6 +17,7 @@ func _ready():
 func _physics_process(delta):
 	animate()
 	dir()
+	attacked()
 	dis = Global.distance(Global.playerpos, position)
 	
 	if dis < 100:
@@ -26,6 +27,9 @@ func _physics_process(delta):
 	else:
 		lol = true
 		$BallsTimer.stop()
+	
+	if life <= 0:
+		queue_free()
 
 # Animation
 func animate():
