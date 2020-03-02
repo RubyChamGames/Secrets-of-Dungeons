@@ -169,6 +169,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="UI" type="Node2D" parent="."]
+
 [node name="Player" parent="." groups=[
 "Player",
 ] instance=ExtResource( 6 )]

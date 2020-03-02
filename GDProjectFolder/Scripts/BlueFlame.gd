@@ -15,10 +15,10 @@ func _ready():
 
 # Update Function
 func _physics_process(delta):
+	dis = Global.distance(Global.playerpos, position)
 	animate()
 	dir()
 	attacked()
-	dis = Global.distance(Global.playerpos, position)
 	
 	if dis < 100:
 		if lol:
