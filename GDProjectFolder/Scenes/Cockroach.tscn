@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Cockroach.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Enemy/Cockroach/Cockroach1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/Enemy/Cockroach/Cockroach2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/EnemyAttackParticles.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -20,7 +21,6 @@ script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -28,3 +28,5 @@ position = Vector2( -0.875954, -0.291988 )
 rotation = 1.57147
 scale = Vector2( 0.639946, 1 )
 shape = SubResource( 2 )
+
+[node name="EnemyAttackParticles" parent="." instance=ExtResource( 4 )]

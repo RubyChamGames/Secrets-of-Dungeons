@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
@@ -8,22 +8,22 @@
 [ext_resource path="res://Scenes/Skelebones.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/BlueFlame.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/Fairy.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/OldMan.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Assets/Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=11]
-[ext_resource path="res://Scripts/LifeCount.gd" type="Script" id=12]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Scenes/Light2D.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Cockroach.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Fairy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/OldMan.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Assets/Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://Scripts/LifeCount.gd" type="Script" id=13]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Light2D.tscn" type="PackedScene" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 29
 outline_size = 3
-font_data = ExtResource( 11 )
+font_data = ExtResource( 12 )
 
 [node name="Floor1" type="Node2D"]
 
 [node name="BG" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Sprite" type="Sprite" parent="BG"]
 texture = ExtResource( 1 )
@@ -210,7 +210,38 @@ position = Vector2( 412, 467 )
 
 [node name="Cockroach" type="Node2D" parent="Hostiles"]
 
-[node name="Cockroach" type="KinematicBody2D" parent="Hostiles/Cockroach"]
+[node name="Cockroach" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 242.679, 38.4127 )
+
+[node name="Cockroach2" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 907.409, 981.17 )
+
+[node name="Cockroach3" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 1154.8, 920.782 )
+
+[node name="Cockroach4" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 543.134, 977.274 )
+
+[node name="Cockroach5" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 1150.91, 1793.48 )
+
+[node name="Cockroach6" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 1747, 1908.42 )
+
+[node name="Cockroach7" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 2403.47, 1633.75 )
+
+[node name="Cockroach8" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 2356.11, 736.77 )
+
+[node name="Cockroach9" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 1600.66, 874.91 )
+
+[node name="Cockroach10" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 2289.09, -208.856 )
+
+[node name="Cockroach11" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
+position = Vector2( 1700.63, -295.194 )
 
 [node name="NPC" type="Node2D" parent="."]
 editor/display_folded = true
@@ -218,22 +249,22 @@ editor/display_folded = true
 [node name="Fairy" type="Node2D" parent="NPC"]
 editor/display_folded = true
 
-[node name="Fairy" parent="NPC/Fairy" instance=ExtResource( 9 )]
+[node name="Fairy" parent="NPC/Fairy" instance=ExtResource( 10 )]
 position = Vector2( 640, 135 )
 
-[node name="Fairy2" parent="NPC/Fairy" instance=ExtResource( 9 )]
+[node name="Fairy2" parent="NPC/Fairy" instance=ExtResource( 10 )]
 position = Vector2( 1444.28, 821.922 )
 
-[node name="Fairy3" parent="NPC/Fairy" instance=ExtResource( 9 )]
+[node name="Fairy3" parent="NPC/Fairy" instance=ExtResource( 10 )]
 position = Vector2( 2541.38, 1155.82 )
 
-[node name="Fairy4" parent="NPC/Fairy" instance=ExtResource( 9 )]
+[node name="Fairy4" parent="NPC/Fairy" instance=ExtResource( 10 )]
 position = Vector2( 477.025, 1526.82 )
 
 [node name="OldMan" type="Node2D" parent="NPC"]
 editor/display_folded = true
 
-[node name="OldMan" parent="NPC/OldMan" instance=ExtResource( 10 )]
+[node name="OldMan" parent="NPC/OldMan" instance=ExtResource( 11 )]
 position = Vector2( 977, -136 )
 
 [node name="Popup" type="AcceptDialog" parent="NPC/OldMan/OldMan"]
@@ -263,19 +294,18 @@ custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.580392, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 text = "LOL"
-script = ExtResource( 12 )
+script = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Player" parent="." groups=[
 "Player",
-] instance=ExtResource( 13 )]
-editor/display_folded = true
+] instance=ExtResource( 14 )]
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
 zoom = Vector2( 0.5, 0.5 )
 
-[node name="Light2D" parent="Player/Camera2D" instance=ExtResource( 14 )]
+[node name="Light2D" parent="Player/Camera2D" instance=ExtResource( 15 )]
 visible = false
