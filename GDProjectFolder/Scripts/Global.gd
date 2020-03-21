@@ -7,7 +7,7 @@ var playerpos = Vector2()
 var playerProp = 0
 var playerState
 var playerHurt = false
-var GameOver = false
+var gameOver = false
 var playerHealth
 var isPlayerAlive = true
 var playerWeapon = "null"
@@ -43,6 +43,8 @@ func isplayerHurt():
 	Global.playerHealth -= hurtcount
 	hurtCountList = []
 
+func spawnEnemy():
+	pass
 
 
 
