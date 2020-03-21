@@ -61,6 +61,7 @@ func attacked():
 	if dis < 60:
 		if Global.playerWeapon == "Knife":
 			if Input.is_action_just_pressed("ui_lmb"):
+				Global.dir_to_enemy = disvector.x
 				life -= 1
 				$EnemyAttackParticles.emitting = true
 	if life <= 0:

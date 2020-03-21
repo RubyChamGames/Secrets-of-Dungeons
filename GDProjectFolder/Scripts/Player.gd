@@ -19,8 +19,10 @@ func _physics_process(delta):
 	Global.playerpos = position
 	playerHealth = Global.playerHealth
 	
+	
 	move()
 	animate()
+	attack()
 	if Global.playerHurt:
 		hurt()
 
@@ -87,5 +89,9 @@ func _on_HurtTimer_timeout():
 	Global.isplayerHurt()
 	$EnemyAttackParticles.emitting = true
 
-
+func attack():
+	if Global.playerProp == 1:
+		if Input.is_action_pressed("ui_lmb"):
+			$Player.play("Attack")
+		
 

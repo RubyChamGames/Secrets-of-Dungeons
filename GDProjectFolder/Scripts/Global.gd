@@ -13,6 +13,7 @@ var isPlayerAlive = true
 var playerWeapon = "null"
 var gameFloor = 0
 var hurtCountList = []
+var dir_to_enemy
 
 func _ready():
 	set_process(true)
