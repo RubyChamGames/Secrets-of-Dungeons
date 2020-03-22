@@ -22,7 +22,8 @@ func _physics_process(delta):
 func playerAttack():
 	if Global.distance(Global.playerpos, position) < 40:
 		Global.playerHurt = true
-		Global.hurtCountList.append(0.1)
+		if !Global.hurtCountList.has(0.1):
+			Global.hurtCountList.append(0.1)
 
 func attacked():
 	if dis < 60:
