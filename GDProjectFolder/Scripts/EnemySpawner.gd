@@ -16,13 +16,12 @@ func spawn():
 	randomize()
 	if playerDis > 300:
 		if !isSpawned:
-			var randEntityNumber = 0
-			randEntityNumber = randf()*5+1
-			if 1 <= randEntityNumber < 2:
+			var randEntityNumber = rand_range(1,4)
+			if 1 < randEntityNumber < 2:
 				entity = skeleton
-			elif 2 <= randEntityNumber < 3:
+			elif 2 < randEntityNumber < 3:
 				entity = cockroach
-			elif 3 <= randEntityNumber <= 4:
+			elif 3 < randEntityNumber < 4:
 				entity = blueflame
 			
 			for n in range (0,2):
