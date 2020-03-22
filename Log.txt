@@ -61,3 +61,6 @@ BlueFlameBall's spawning mechanisms and animations have been created
 --> Map Update
 --> HUD Scripting
 --> Misc Scripting
+
+22/03/2020 ; CrimsonRuby11 ;
+--> Created itch.io account
