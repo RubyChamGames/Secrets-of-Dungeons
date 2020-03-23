@@ -79,6 +79,10 @@ func animate():
 		
 		elif playerDir == Vector2.ZERO:
 			$Player.play("Idle")
+	if Global.playerBlood:
+		$EnemyAttackParticles.emitting = true
+	else:
+		$EnemyAttackParticles.emitting = false
 
 func hurt():
 	if Global.playerHurt:
@@ -87,7 +91,6 @@ func hurt():
 
 func _on_HurtTimer_timeout():
 	Global.isplayerHurt()
-	$EnemyAttackParticles.emitting = true
 
 func attack():
 	if Global.playerProp == 1:

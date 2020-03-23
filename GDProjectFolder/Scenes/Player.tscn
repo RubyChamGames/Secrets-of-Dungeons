@@ -43,20 +43,10 @@ animations = [ {
 "name": "Right",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "Idle_Knife",
-"speed": 3.0
-}, {
 "frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "Right_Knife",
 "speed": 7.0
-}, {
-"frames": [ ExtResource( 17 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "Down_Knife",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 20 ) ],
 "loop": true,
@@ -72,6 +62,16 @@ animations = [ {
 "loop": true,
 "name": "Up",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Down_Knife",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Idle_Knife",
+"speed": 3.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]

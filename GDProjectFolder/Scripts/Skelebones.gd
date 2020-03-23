@@ -59,4 +59,7 @@ func playerHurt():
 	if dis < 32 and !Global.hurtCountList.has(0.75):
 		Global.playerHurt = true
 		Global.hurtCountList.append(0.75)
+		Global.playerBlood = true
+	else:
+		Global.playerBlood = false
 

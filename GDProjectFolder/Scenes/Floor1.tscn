@@ -7,7 +7,7 @@
 [ext_resource path="res://Scenes/Signboard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Skelebones.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Reaper.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Scenes/BlueFlame.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Upstairs.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Cockroach.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Fairy.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/OldMan.tscn" type="PackedScene" id=11]
@@ -74,6 +74,9 @@ tile_data = PoolIntArray( -1048519, 4, 0, -1048518, 0, 0, -1048517, 0, 0, -10485
 
 [node name="Stairs" type="Node2D" parent="Environment"]
 
+[node name="Upstairs" parent="Environment/Stairs" instance=ExtResource( 8 )]
+position = Vector2( 2028.57, 826.318 )
+
 [node name="Weapons" type="Node2D" parent="Environment"]
 
 [node name="Knife" type="Node2D" parent="Environment/Weapons"]
@@ -117,12 +120,95 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Signboard3" parent="Environment/Signboard" instance=ExtResource( 5 )]
+position = Vector2( 1987.2, 824.794 )
+
+[node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard3"]
+modulate = Color( 1, 0.278431, 0.164706, 1 )
+margin_left = -224.0
+margin_top = -103.0
+margin_right = 74.0
+margin_bottom = 23.0
+window_title = "Ahoy, Traveller!!!"
+resizable = true
+dialog_text = "Ahoy, Traveller! Looks like you have found
+your way out of the dungeon!
+You are wrong, you are currently in the deepest part of the dungeon
+Continue your journey, find all the secrets, and hopefully, SURVIVE"
+dialog_autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Hostiles" type="Node2D" parent="."]
 
 [node name="Spawners" type="Node2D" parent="Hostiles"]
 
 [node name="EnemySpawner" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
 position = Vector2( 30.3887, 471.871 )
+
+[node name="EnemySpawner5" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 728.741, 993.813 )
+
+[node name="EnemySpawner6" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1444.73, 868.515 )
+
+[node name="EnemySpawner7" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1446.52, 558.851 )
+
+[node name="EnemySpawner8" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1260.36, 98.8301 )
+
+[node name="EnemySpawner9" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1435.78, -28.2574 )
+
+[node name="EnemySpawner10" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1684.58, -291.382 )
+
+[node name="EnemySpawner11" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2255.58, -223.364 )
+
+[node name="EnemySpawner12" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2241.26, 331.526 )
+
+[node name="EnemySpawner2" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 258.27, 827.23 )
+
+[node name="EnemySpawner3" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1454.27, 332.093 )
+
+[node name="EnemySpawner4" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2096.33, 405.897 )
+
+[node name="EnemySpawner13" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2355.85, 739.765 )
+
+[node name="EnemySpawner14" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2535.17, 948.25 )
+
+[node name="EnemySpawner15" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2567.25, 1101.33 )
+
+[node name="EnemySpawner16" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2724.71, 1311.28 )
+
+[node name="EnemySpawner17" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2768.44, 1478.94 )
+
+[node name="EnemySpawner18" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 2387.92, 1646.6 )
+
+[node name="EnemySpawner19" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1737.68, 1786.56 )
+
+[node name="EnemySpawner20" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1593.35, 2000.88 )
+
+[node name="EnemySpawner21" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 1161.8, 1806.98 )
+
+[node name="EnemySpawner22" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
+position = Vector2( 927.069, 1843.42 )
 
 [node name="Skeleton" type="Node2D" parent="Hostiles"]
 
@@ -131,30 +217,6 @@ position = Vector2( 838, -17 )
 
 [node name="Skelebones2" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
 position = Vector2( 889, -17 )
-
-[node name="Skelebones4" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 1489.42, -142.289 )
-
-[node name="Skelebones5" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 1445.22, 677.83 )
-
-[node name="Skelebones6" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 1760.74, 864.444 )
-
-[node name="Skelebones8" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 1824.59, 979.85 )
-
-[node name="Skelebones7" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 1796.35, 777.276 )
-
-[node name="Skelebones9" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 2091, 640.998 )
-
-[node name="Skelebones10" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 2203.95, 756.404 )
-
-[node name="Skelebones11" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
-position = Vector2( 2068.9, 1017.91 )
 
 [node name="Skelebones3" parent="Hostiles/Skeleton" instance=ExtResource( 6 )]
 position = Vector2( 932, -17 )
@@ -187,58 +249,10 @@ position = Vector2( 1000, -98 )
 
 [node name="BlueFlame" type="Node2D" parent="Hostiles"]
 
-[node name="BlueFlame5" parent="Hostiles/BlueFlame" instance=ExtResource( 8 )]
-position = Vector2( 2524.08, 909.451 )
-
-[node name="BlueFlame6" parent="Hostiles/BlueFlame" instance=ExtResource( 8 )]
-position = Vector2( 2741.31, 1337.53 )
-
-[node name="BlueFlame7" parent="Hostiles/BlueFlame" instance=ExtResource( 8 )]
-position = Vector2( 2248.72, 1734.19 )
-
-[node name="BlueFlame8" parent="Hostiles/BlueFlame" instance=ExtResource( 8 )]
-position = Vector2( 1591.45, 2027.74 )
-
-[node name="BlueFlame4" parent="Hostiles/BlueFlame" instance=ExtResource( 8 )]
-position = Vector2( 176.444, 638.452 )
-
-[node name="BlueFlame3" parent="Hostiles/BlueFlame" instance=ExtResource( 8 )]
-position = Vector2( 412, 467 )
-
 [node name="Cockroach" type="Node2D" parent="Hostiles"]
 
 [node name="Cockroach" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
 position = Vector2( 242.679, 38.4127 )
-
-[node name="Cockroach2" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 907.409, 981.17 )
-
-[node name="Cockroach3" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 1154.8, 920.782 )
-
-[node name="Cockroach4" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 543.134, 977.274 )
-
-[node name="Cockroach5" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 1150.91, 1793.48 )
-
-[node name="Cockroach6" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 1747, 1908.42 )
-
-[node name="Cockroach7" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 2403.47, 1633.75 )
-
-[node name="Cockroach8" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 2356.11, 736.77 )
-
-[node name="Cockroach9" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 1600.66, 874.91 )
-
-[node name="Cockroach10" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 2289.09, -208.856 )
-
-[node name="Cockroach11" parent="Hostiles/Cockroach" instance=ExtResource( 9 )]
-position = Vector2( 1700.63, -295.194 )
 
 [node name="NPC" type="Node2D" parent="."]
 
@@ -256,6 +270,9 @@ position = Vector2( 2541.38, 1155.82 )
 [node name="Fairy4" parent="NPC/Fairy" instance=ExtResource( 10 )]
 position = Vector2( 477.025, 1526.82 )
 
+[node name="Fairy5" parent="NPC/Fairy" instance=ExtResource( 10 )]
+position = Vector2( 2395.23, 72.5186 )
+
 [node name="OldMan" type="Node2D" parent="NPC"]
 
 [node name="OldMan" parent="NPC/OldMan" instance=ExtResource( 11 )]
@@ -266,10 +283,11 @@ visible = true
 modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -104.0
 margin_top = -27.0
-margin_right = 126.0
-margin_bottom = 65.0
+margin_right = 232.0
+margin_bottom = 52.0
 window_title = "Thanks Child..."
-dialog_text = "My Child, this dungeon is vast, you will need this. Take this as a gift for saving my life."
+dialog_text = "My Child, this dungeon is vast, you will need this. 
+Take this as a gift for saving my life."
 __meta__ = {
 "_edit_use_anchors_": false
 }

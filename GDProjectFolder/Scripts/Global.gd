@@ -7,6 +7,7 @@ var playerpos = Vector2()
 var playerProp = 0
 var playerState
 var playerHurt = false
+var playerBlood = false
 var gameOver = false
 var playerHealth
 var isPlayerAlive = true

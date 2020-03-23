@@ -14,16 +14,21 @@ func _physics_process(delta):
 	dis = disvector.length()
 	$AnimatedSprite.flip_h = true
 	dir = (Global.playerpos - position).normalized()
-	look_at(Global.playerpos)
-	move_and_slide(speed * dir * delta)
+	if Global.distance(Global.playerpos, position) < 160:
+		look_at(Global.playerpos)
+		move_and_slide(speed * dir * delta)
 	attacked()
 	playerAttack()
 
 func playerAttack():
-	if Global.distance(Global.playerpos, position) < 40:
-		Global.playerHurt = true
-		if !Global.hurtCountList.has(0.1):
-			Global.hurtCountList.append(0.1)
+	if Global.distance(Global.playerpos, position) < 100:
+		if Global.distance(Global.playerpos, position) < 40:
+			Global.playerHurt = true
+			Global.playerBlood = true
+			if !Global.hurtCountList.has(0.1):
+				Global.hurtCountList.append(0.1)
+		else:
+			Global.playerBlood = false
 
 func attacked():
 	if dis < 60:
