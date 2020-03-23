@@ -122,7 +122,7 @@ __meta__ = {
 [node name="Spawners" type="Node2D" parent="Hostiles"]
 
 [node name="EnemySpawner" parent="Hostiles/Spawners" instance=ExtResource( 16 )]
-position = Vector2( 29.7791, 471.871 )
+position = Vector2( 30.3887, 471.871 )
 
 [node name="Skeleton" type="Node2D" parent="Hostiles"]
 
