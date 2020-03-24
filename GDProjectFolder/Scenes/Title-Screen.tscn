@@ -30,6 +30,8 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
+anchor_top = -0.00138212
+anchor_bottom = -0.00138214
 margin_left = 48.699
 margin_top = 14.65
 margin_right = 848.699
