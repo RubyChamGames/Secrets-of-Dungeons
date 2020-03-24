@@ -1,5 +1,8 @@
 extends VBoxContainer
 
+func _ready():
+	$AudioStreamPlayer2D.play()
+
 func _on_Play_button_down():
 	get_tree().change_scene("res://Scenes/Tutorial.tscn")
 

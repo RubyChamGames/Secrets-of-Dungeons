@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scenes/TileSet.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Signboard.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Scenes/Knife.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Assets/Sprites/BG.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Assets/Music/ingame_1.ogg" type="AudioStream" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 11
@@ -227,3 +228,7 @@ zoom = Vector2( 0.5, 0.5 )
 [node name="Light2D" parent="Player/Camera2D" instance=ExtResource( 8 )]
 visible = false
 color = Color( 0.968627, 0.72549, 0.415686, 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource( 15 )
+volume_db = 1.5

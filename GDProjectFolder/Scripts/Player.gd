@@ -13,6 +13,7 @@ var playerHealth
 # Ready Function
 func _ready():
 	$Camera2D/Light2D.show()
+	$AudioStreamPlayer2D.play()
 
 # Update Function
 func _physics_process(delta):
