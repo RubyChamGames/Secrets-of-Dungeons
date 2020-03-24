@@ -19,7 +19,6 @@ func _physics_process(delta):
 	Global.playerpos = position
 	playerHealth = Global.playerHealth
 	
-	
 	move()
 	animate()
 	attack()
@@ -97,4 +96,3 @@ func attack():
 		if Input.is_action_pressed("ui_lmb"):
 			$Player.play("Attack")
 		
-

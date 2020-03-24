@@ -6,9 +6,6 @@ var dis
 var disvector = Vector2()
 var life = 3
 
-func _ready():
-	pass
-
 func _physics_process(delta):
 	disvector = Global.playerpos - position
 	dis = disvector.length()
