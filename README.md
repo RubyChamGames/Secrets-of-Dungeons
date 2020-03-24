@@ -1,43 +1,14 @@
 # Secrets of Dungeons
-## Created by Dark NRG Gaming Club
-### Credits to 
-###### 1. Prithviraj (CrimsonRuby11) 
-###### 2. Swaminathan (Swamsthenerd)
+## Created by RubyCham Games
+### Creators :-
+#### 1. Prithviraj (CrimsonRuby11) 
+#### 2. Swaminathan (Swamsthenerd)
 
-# Main Game Idea
-**Yet to be decided**
+### Game Plot :-
+##### Based on a top down RPG Survival game, the player has to survive each floor of an abandoned dungeon, discover its buried secrets. While discovering places, the player shall discover various creatures, waiting to attack the player.
+##### This game is still under development, further status will be posted in the github project board (Under Development)
 
-# Made With
-* Godot 3.1
-* GIMP 2.10
+#### Made Using Godot 3.2, Art using GIMP 2.10
 
-# Sprites and Other Stuff
-## 1.) Enemy:
-- [x] Reaper
-- [x] Blue Flame
-- [x] Skeleton and Skeleton Spawner
-- [ ] Dragon (Boss)
-- [x] Cockroach
-- [ ] Sting Bee
-- [x] Devil
-
-## 2.) NPCs:
-- [x] Old Thatha
-- [x] Fairy
-- [ ] Lost Explorer
-- [ ] Random Guy (Good/Bad) 
-
-## 3.) Environment:
-- [x] Water
-- [x] Lava
-- [x] Cobweb
-- [ ] Quick sand
-- [ ] Moss
-
-## 4.) Biomes
-- [x] Graveyard Biome (Reaper, Skeleton, BlueFlame)
-- [ ] Bug Infested Biome (Bugs)
-- [ ] The Unknown Lands (Fairy, Devil)
-
-## 5.) Small Details
-- [x] Heart
+### About the Creators :-
+##### Living in India, we do game developing in our free time. we are beginners in the field. This is the first official game of RubyCham Games...
