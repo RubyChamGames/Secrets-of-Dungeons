@@ -43,7 +43,6 @@ margin_bottom = 520.0
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
-editor/display_folded = true
 margin_right = 348.0
 margin_bottom = 466.0
 size_flags_horizontal = 3
@@ -83,12 +82,11 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="VBoxContainer/HBoxContainer/CenterContainer"]
+position = Vector2( 141.448, 222.506 )
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="VBoxContainer/HBoxContainer/CenterContainer/KinematicBody2D"]
-position = Vector2( 174.591, 222.424 )
 frames = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/CenterContainer/KinematicBody2D"]
-position = Vector2( 163.502, 239.1 )
 shape = SubResource( 2 )
