@@ -44,9 +44,6 @@ func isplayerHurt():
 	Global.playerHealth -= hurtcount
 	hurtCountList = []
 
-func spawnEnemy():
-	pass
-
 
 
 
