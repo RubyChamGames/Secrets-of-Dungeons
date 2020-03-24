@@ -8,7 +8,7 @@ extends KinematicBody2D
 func _ready():
 	pass
 func _physics_process(delta):
-	$KinematicBody2D.play("default")
+	$AnimatedSprite.play("default")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

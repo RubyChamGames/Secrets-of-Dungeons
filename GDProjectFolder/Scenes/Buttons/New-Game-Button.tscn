@@ -1,12 +1,15 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Fonts/lol.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Fonts/ButtonFont.tres" type="DynamicFont" id=1]
 
 [node name="Resume" type="Button"]
 margin_right = 700.0
 margin_bottom = 72.0
 custom_fonts/font = ExtResource( 1 )
 flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
