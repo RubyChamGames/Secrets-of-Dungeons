@@ -21,7 +21,6 @@
 [node name="Floor1" type="Node2D"]
 
 [node name="BG" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Sprite" type="Sprite" parent="BG"]
 texture = ExtResource( 1 )
@@ -87,6 +86,7 @@ position = Vector2( 237, 109 )
 position = Vector2( 272, 177 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard"]
+visible = true
 modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -224.0
 margin_top = -103.0
@@ -104,6 +104,7 @@ __meta__ = {
 position = Vector2( 232, 368 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard2"]
+visible = true
 modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -224.0
 margin_top = -103.0
@@ -121,6 +122,7 @@ __meta__ = {
 position = Vector2( 1987.2, 824.794 )
 
 [node name="Popup" type="AcceptDialog" parent="Environment/Signboard/Signboard3"]
+visible = true
 modulate = Color( 1, 0.278431, 0.164706, 1 )
 margin_left = -224.0
 margin_top = -103.0
@@ -326,9 +328,7 @@ __meta__ = {
 
 [node name="HUD" parent="UI" instance=ExtResource( 14 )]
 
-[node name="Player" parent="." groups=[
-"Player",
-] instance=ExtResource( 15 )]
+[node name="Player" parent="." instance=ExtResource( 15 )]
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true

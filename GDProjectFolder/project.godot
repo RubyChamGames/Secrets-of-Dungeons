@@ -16,14 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="Secrets of Dungeons"
+config/description="Top down RPG Survival Pixel Game"
 run/main_scene="res://Scenes/Title-Screen.tscn"
 config/icon="res://Logo/Player-Huge.png"
-config/description="Top down RPG Survival Pixel Game"
 
 [autoload]
 
 Global="*res://Scripts/Global.gd"
-HUD="*res://Scenes/HUD.tscn"
 UserData="*res://addons/github-integration/scripts/user_data.gd"
 IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
 

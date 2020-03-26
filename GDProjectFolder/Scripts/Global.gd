@@ -22,6 +22,7 @@ func _ready():
 	playerState = "Idle"
 	playerHealth = 10
 	playerHurt = false
+	gameFloor = 0
 
 func _process(delta):
 	if playerHealth <= 0:

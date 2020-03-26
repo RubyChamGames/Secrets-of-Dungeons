@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Sprites/StairsFound.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/StairsFound.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Fonts/Acme-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 51
+outline_size = 6
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="StairsFound" type="TextureRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextLevel" type="Button" parent="."]
+margin_left = 285.271
+margin_top = 225.563
+margin_right = 483.271
+margin_bottom = 296.563
+custom_fonts/font = SubResource( 1 )
+text = "Continue"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 282.783
+margin_top = 296.052
+margin_right = 480.783
+margin_bottom = 367.052
+custom_fonts/font = SubResource( 1 )
+text = "Exit"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="NextLevel" to="." method="_on_NextLevel_button_down"]
+[connection signal="button_down" from="Exit" to="." method="_on_Exit_button_down"]
