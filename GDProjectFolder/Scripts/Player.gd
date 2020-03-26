@@ -12,6 +12,7 @@ var playerHealth
 
 # Ready Function
 func _ready():
+	$EnemyAttackParticles.emitting = true
 	$Camera2D/Light2D.show()
 	$AudioStreamPlayer2D.play()
 

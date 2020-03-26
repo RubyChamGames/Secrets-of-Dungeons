@@ -18,14 +18,13 @@ func _physics_process(delta):
 	playerAttack()
 
 func playerAttack():
-	if Global.distance(Global.playerpos, position) < 100:
-		if Global.distance(Global.playerpos, position) < 40:
-			Global.playerHurt = true
-			Global.playerBlood = true
-			if !Global.hurtCountList.has(0.1):
-				Global.hurtCountList.append(0.1)
-		else:
-			Global.playerBlood = false
+	if Global.distance(Global.playerpos, position) < 30:
+		Global.playerHurt = true
+		Global.playerBlood = true
+		if !Global.hurtCountList.has(0.1):
+			Global.hurtCountList.append(0.1)
+	else:
+		Global.playerBlood = false
 
 func attacked():
 	if dis < 60:

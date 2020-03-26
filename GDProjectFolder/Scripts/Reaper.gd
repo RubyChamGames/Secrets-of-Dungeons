@@ -69,12 +69,11 @@ func attacked():
 		queue_free()
 
 func playerHurt():
-	if Global.distance(Global.playerpos, position) < 120:
-		if Global.distance(Global.playerpos, position) < 60 and !Global.hurtCountList.has(1):
-			Global.playerHurt = true
-			Global.playerBlood = true
-			Global.hurtCountList.append(1)
-		else:
-			Global.playerBlood = false
+	if Global.distance(Global.playerpos, position) < 60 and !Global.hurtCountList.has(1):
+		Global.playerHurt = true
+		Global.playerBlood = true
+		Global.hurtCountList.append(1)
+		#else:
+			#Global.playerBlood = false
 
 
