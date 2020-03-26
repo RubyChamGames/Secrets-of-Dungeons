@@ -7,14 +7,14 @@
 [ext_resource path="res://Scenes/Buttons/Settigs.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Buttons/Exit.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Music/Main Menu.ogg" type="AudioStream" id=7]
-[ext_resource path="res://Scripts/KinematicBody2D.gd" type="Script" id=8]
-[ext_resource path="res://Logo/Player-Huge.png" type="Texture" id=9]
-[ext_resource path="res://Logo/Player-Huge2.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Fonts/ButtonFont.tres" type="DynamicFont" id=11]
+[ext_resource path="res://Assets/Fonts/ButtonFont.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Scripts/KinematicBody2D.gd" type="Script" id=9]
+[ext_resource path="res://Logo/Player-Huge.png" type="Texture" id=10]
+[ext_resource path="res://Logo/Player-Huge2.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "default",
 "speed": 3.0
@@ -90,7 +90,7 @@ stream = ExtResource( 7 )
 margin_top = 401.0
 margin_right = 348.0
 margin_bottom = 474.0
-custom_fonts/font = ExtResource( 11 )
+custom_fonts/font = ExtResource( 8 )
 text = "Github Page"
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HBoxContainer"]
@@ -102,7 +102,7 @@ size_flags_vertical = 3
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="VBoxContainer/HBoxContainer/CenterContainer"]
 position = Vector2( 141.448, 222.506 )
-script = ExtResource( 8 )
+script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="VBoxContainer/HBoxContainer/CenterContainer/KinematicBody2D"]
 frames = SubResource( 1 )
