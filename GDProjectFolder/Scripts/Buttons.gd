@@ -8,3 +8,7 @@ func _on_Play_button_down():
 
 func _on_Exit_button_down():
 	get_tree().quit()
+
+
+func _on_LinkButton_button_down():
+	OS.shell_open("https://rubychamgames.github.io/Secrets-of-Dungeons/")
