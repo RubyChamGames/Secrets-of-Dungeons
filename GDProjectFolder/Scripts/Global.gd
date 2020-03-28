@@ -15,6 +15,7 @@ var playerWeapon = "null"
 var gameFloor = 0
 var hurtCountList = []
 var dir_to_enemy
+var volume
 
 func _ready():
 	set_process(true)
@@ -23,6 +24,7 @@ func _ready():
 	playerHealth = 10
 	playerHurt = false
 	gameFloor = 0
+	volume = 5
 
 func _process(delta):
 	if playerHealth <= 0:

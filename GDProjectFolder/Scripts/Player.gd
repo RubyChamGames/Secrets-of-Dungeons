@@ -19,6 +19,7 @@ func _ready():
 func _physics_process(delta):
 	Global.playerpos = position
 	playerHealth = Global.playerHealth
+	$AudioStreamPlayer2D.volume_db = Global.volume / 10
 	
 	move()
 	animate()
