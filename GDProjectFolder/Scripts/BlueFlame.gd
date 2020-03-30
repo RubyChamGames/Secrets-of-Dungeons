@@ -48,10 +48,11 @@ func dir():
 		scale.x = 1
 
 func attacked():
-	if dis < 50:
+	if dis < 40:
 		if Global.playerWeapon == "Knife":
 			if Input.is_action_just_pressed("ui_lmb"):
 				life -= 1
+				$EnemyAttackParticles.emitting = true
 
 
 

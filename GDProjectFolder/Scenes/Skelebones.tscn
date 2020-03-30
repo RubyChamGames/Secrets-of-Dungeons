@@ -1,29 +1,29 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/Skelebones.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonStance.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk1.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk2.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk3.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk4.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk5.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonAttack.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/Skeleton.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/Skeleton.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonStance.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonAttack.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk4.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/Enemy/Skeleton/SkeletonWalk5.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/EnemyAttackParticles.tscn" type="PackedScene" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 9 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "Attack",
 "speed": 3.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "Move",
 "speed": 7.0

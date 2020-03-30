@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/BlueFlame.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Enemy/BlueFlame/BlueFlame.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/Enemy/BlueFlame/BlueFlame2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/EnemyAttackParticles.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -28,4 +29,6 @@ shape = SubResource( 2 )
 
 [node name="BallsTimer" type="Timer" parent="."]
 wait_time = 0.5
+
+[node name="EnemyAttackParticles" parent="." instance=ExtResource( 4 )]
 [connection signal="timeout" from="BallsTimer" to="." method="_on_BallsTimer_timeout"]

@@ -28,9 +28,9 @@ func playerAttack():
 			Global.playerBlood = false
 
 func attacked():
-	if dis < 60:
+	if dis < 40:
 		if Global.playerWeapon == "Knife":
-			if Input.is_action_pressed("ui_lmb"):
+			if Input.is_action_just_pressed("ui_lmb"):
 				life -= 1
 				$EnemyAttackParticles.emitting = true
 		if life <= 0:

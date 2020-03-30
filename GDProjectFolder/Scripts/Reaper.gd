@@ -58,7 +58,7 @@ func animate():
 			$AnimatedSprite.play("Move")
 
 func attacked():
-	if dis < 60:
+	if dis < 40:
 		if Global.playerWeapon == "Knife":
 			if Input.is_action_just_pressed("ui_lmb"):
 				Global.dir_to_enemy = disvector.x
@@ -70,7 +70,7 @@ func attacked():
 
 func playerHurt():
 	if Global.distance(Global.playerpos, position) < 120:
-		if Global.distance(Global.playerpos, position) < 60 and !Global.hurtCountList.has(1):
+		if Global.distance(Global.playerpos, position) < 50 and !Global.hurtCountList.has(1):
 			Global.playerHurt = true
 			Global.playerBlood = true
 			Global.hurtCountList.append(1)
