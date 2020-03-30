@@ -10,5 +10,5 @@ func _on_Exit_button_down():
 	get_tree().quit()
 
 func _on_Settings_button_down():
-	
+	pass
 
